@@ -1,0 +1,23 @@
+need to remember to check the filetypes for data uploads
+
+also to add a description to be stored with every job.
+
+add comment to say to make target variable in the last column of data
+
+K-MEANS CLUSTERING
+When computing the correct number of cluster for K-Means:
+Two possible ways to check if the number of cluster is correct
+    
+    1. Elbow Method:
+        1. K-means for diff values of k
+        2. for each k, calculate the total within-cluster sum of squares(wss)
+        3. Plot the curve of WSS according to the number of clusters of k
+        4. The location of the bend (knee) in the plot is generally considered as an indicator of the appropriate number of clusters.\
+
+    2. Average silhouette method:
+        1. K-means for diff values of k
+        2. For each k, calculate the average silhouette of observations (avg. sil)?
+        3. plot the curve of avg.sil according to the number of clusters k
+        4. the location of the maximum is considered as the appropriate number of clusters.
+
+pulled from https://www.datanovia.com/en/lessons/determining-the-optimal-number-of-clusters-3-must-know-methods/

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h2>    
+        <h3><span style='font-size:30px;'>Welcome </span><span style='font-size:20px;'>to the</span></h3>
+        
+    </h2>
+    <h1 style='font-size:50px;'>ML Model Training Space</h1>
+    <p>This application allows you to train various machine learning models. Choose a model to start with:</p>
+    <a class="btn btn-primary" href="{{ url_for('linear_regression') }}" role="button">Linear Regression</a>
+    <!-- Add more buttons for other models -->
+</div>
+{% endblock %}

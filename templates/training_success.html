@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Model Training Successful</h2>
+<p>The linear regression model has been trained successfully!</p>
+<h4>Model Information</h4>
+<ul>
+    <li>
+        <h5>Model Filename: </h5>
+        <p>{{ model_filename }}</p>
+    </li>
+    <li>
+        <h5>Model Score:</h5>
+        <p>Mean Squared Error: {{ mse }}</p>
+    </li>
+</ul>
+<!-- Display model download link -->
+<a href="{{ url_for('download_model', filename=model_filename) }}" class="btn btn-primary">Download Model</a>
+
+<!-- Optional: Display visualization here -->
+{% if plot_url %}
+    <h3>Model Visualization</h3>
+    <img src="{{ plot_url }}" alt="Model Visualization">
+{% endif %}
+
+<a href="{{ url_for('linear_regression') }}" class="btn btn-secondary">Train Another Model</a>
+{% endblock %}

@@ -1,0 +1,17 @@
+2024-02-23 12:52:53,652 INFO root MainThread : Allowed file extensions: {'csv', 'xls', 'xlsx'}
+2024-02-23 12:52:53,652 INFO root MainThread : Upload folder: uploads
+2024-02-23 12:52:53,653 INFO root MainThread : Starting the app on 127.0.0.1:5000
+ with debug mode on and log file at logs/app_2024-02-23_12-52-53.log
+2024-02-23 12:52:53,657 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-23 12:52:53,657 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-02-23 12:52:57,485 INFO root Thread-1 (process_request_thread) : Homepage accessed
+2024-02-23 12:52:57,488 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [23/Feb/2024 12:52:57] "GET / HTTP/1.1" 200 -
+2024-02-23 12:53:26,716 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [23/Feb/2024 12:53:26] "GET /linear-regression HTTP/1.1" 200 -
+2024-02-23 12:53:33,277 INFO root Thread-3 (process_request_thread) : Checking if linear_regression_test_data.csv is allowed
+2024-02-23 12:53:33,277 INFO root Thread-3 (process_request_thread) : Allowed extensions: {'csv', 'xls', 'xlsx'}
+2024-02-23 12:53:33,308 INFO root Thread-3 (process_request_thread) : Linear Regression Model trained. MSE: 0.22943831174285725
+2024-02-23 12:53:33,310 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [23/Feb/2024 12:53:33] "POST /linear-regression HTTP/1.1" 200 -
+2024-02-23 12:53:41,614 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [23/Feb/2024 12:53:41] "GET /upload HTTP/1.1" 200 -
+2024-02-23 12:53:46,691 INFO root Thread-5 (process_request_thread) : Homepage accessed
+2024-02-23 12:53:46,692 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [23/Feb/2024 12:53:46] "GET / HTTP/1.1" 200 -

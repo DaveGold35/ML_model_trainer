@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Linear Regression Model Training</h2>
+<p>Use this page to upload your dataset and train a linear regression model. Ensure your dataset is in a CSV format with the last column being the target variable.</p>
+
+<!-- Form for uploading dataset -->
+<form action="{{ url_for('linear_regression') }}" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="file">Dataset File (CSV):</label>
+        <input type="file" class="form-control-file" id="file" name="file" required>
+    </div>
+    <!-- You can add additional parameters for model training here -->
+    <button type="submit" class="btn btn-primary">Train Model</button>
+</form>
+
+<!-- Optionally, include a section for results if you plan to display them on the same page -->
+{% if results %}
+    <h3>Model Training Results</h3>
+    <p>MSE: {{ results.mse }}</p>
+    <!-- Include more results as needed -->
+{% endif %}
+{% endblock %}
