@@ -1,6 +1,6 @@
 <font size = 30>Machine Learning Trainer</font>
 
-This project is being built to create a no-code solution to train and test simple data-science related machine learning models.
+This project is being built to create a no-code solution to train and test simple data-science-related machine learning models.
 
 <font size = 5> FEATURES </font>
 
